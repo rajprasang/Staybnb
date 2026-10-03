@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #ff385c;
+  --brand-dark: #e31c5f;
+  --brand-light: #fff0f3;
+  --text-primary: #222222;
+  --text-secondary: #717171;
+  --surface: #ffffff;
+  --surface-soft: #fff8f9;
+  --border: #e5e5e5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: #ffffff;
+  color: var(--text-primary);
+
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #ff385c;
+  color: white;
+}
+
+/* Hide scrollbar but keep horizontal scrolling */
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
